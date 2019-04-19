@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="static/css/items.css" type="text/css">
+  
+{% extends 'layout.html' %}
+
+{% block body %}
+<body>
+  <div class="container">
+    <div id="mainContainer">
+      <div id="leftNav">
+        <div><img id="one" src="static/images/1.jpeg"   onclick="showImage('1.jpeg');" /></div>
+        <div><img id="one" src="static/images/2.png" onclick="showImage('2.png');" /></div>
+        <div><img id="one" src="static/images/4.jpeg"  onclick="showImage('4.jpeg');" /></div>
+        <div><img id="one" src="static/images/6.jpeg"  onclick="showImage('6.jpeg');" /></div>
+        <div><img id="one" src="static/images/7.jpeg"  onclick="showImage('7.jpeg');" /></div>
+      </div>
+      <div id="rightDisplay">
+        <img id="currentImg" src="static/images/1.jpeg"  />
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+
+       function showImage(imgName) {
+         var curImage = document.getElementById('currentImg');
+         var thePath = 'static/images/';
+         var theSource = thePath + imgName;
+          curImage.src = theSource;
+          curImage.alt = imgName;
+          curImage.title = imgName;
+      }
+      </script>
+</body>
+
+{% endblock %}

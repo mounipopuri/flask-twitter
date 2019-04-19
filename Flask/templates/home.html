@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="static/css/home.css" type="text/css">
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6"  style="background-color: lightblue; height: 100%">
+      <form style="padding: 38% 20% 38% 20%">
+        <div class="form-group" style="text-align: center;">
+          <label for="exampleInput">Enter your tweet here</label>
+          <textarea class="form-control" id="exampleInput" rows="3"></textarea>
+          <button class="btn btn-secondary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6"  style="background-color: gray; ">
+      <div style="height: 50%%">
+        <form style="padding: 15% 15% 15% 15%">
+          <div class="form-group" style="text-align: center;">
+              <label for="exampleInput">Enter your tweet here</label>
+              <textarea class="form-control" id="exampleInput" rows="3"></textarea>
+              <button class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+       </div>
+       <hr />
+       <div style="height: 50%%">
+        <form style="padding: 15% 15% 15% 15%">
+          <div class="form-group" style="text-align: center;">
+              <label for="exampleInput">Enter your tweet here</label>
+              <textarea class="form-control" id="exampleInput" rows="3"></textarea>
+              <button class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+       </div>
+      
+      </div>
+  </div>
+</div>
+
+{% endblock %}
